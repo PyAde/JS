@@ -1,0 +1,56 @@
+CSS adalah bahasa untuk menggambarkan bagaimana dokument HTML di tampilkan secara visual.
+CSS singkatan dari Cascading Style Sheets
+CSS ini mempermudah untuk mendesai halaman
+
+CSS Text Properties
+• text-align
+• fomt-weight
+• text-decoration
+• line-height
+• letter-spacing
+
+Relative
+• em
+• rem
+• vh
+• vw
+• %
+• etc
+
+Absolute
+• px
+• pt 
+• cm 
+• in 
+• mm
+
+Aturan CSS
+selector{
+    property: value;
+    
+}
+
+PSEUDO ELEMENTS
+kata kunci yang ditambahkan pada selector untuk memilih bagian element 
+yang dipilih
+
+• : after 
+• :before
+• :first-letter
+• :first-line
+• :selection
+
+PSEUDO CLASSES
+kata kunci ditambahkan pada selector untuk memilh element secara 
+spesifik pada kondisi tertentu
+• : active
+• :checked
+• :first
+• :hover
+• :nth-child()
+• :nth-of-type()
+
+Flexbox
+adalah salah satu metode dimensional layout untuk mengatur
+baris dan kolom
+

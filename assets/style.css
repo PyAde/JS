@@ -1,0 +1,38 @@
+
+/* Descendant */
+.jokes >  p{
+    color: blue;
+    font-size: 14px;
+}
+.jokes > p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+a + button {
+    background-color: blue;
+    color: white;
+}
+
+input[type="text"]{
+    color: blue;
+}
+
+section button:hover{
+    background-color: blue;
+    color: white;
+}
+section h3::first-letter{
+    font-size: xx-large;
+}
+
+section p::first-line{
+    color: blue;
+}
+
+section h3::after{
+    content: "*";
+}
+/* section:nth-of-type(2n){
+    background-color: blue;
+    color: white;
+} */

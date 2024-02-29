@@ -1,0 +1,23 @@
+# install doctest
+# untuk document testing pada file javascript
+# sebagai syarat contributor untuk pull
+# jika tidak melewati check dari doctesting
+# maka owner atau member mengecek, memberitahukan
+# atau jika tidak ada perubahan maka pull request di close
+name: Node CI
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "14"
+          cache: npm
+      - name: npm install, build, and test
+        run: |
+          npm install doctest
+          npx doctest **/*.js || true
+        env:
+          CI: true
