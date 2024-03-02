@@ -1,0 +1,50 @@
+/** @format */
+
+body {
+  font-family: "Open-sans", sans-serif;
+}
+
+h1 {
+  font-size: 5em;
+  text-align: center;
+  color: black;
+}
+
+nav {
+  font-size: 1.5em;
+}
+
+ul,
+li {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
+/* @media (max-width: 500px) {
+  h1 {
+    color: aqua;
+  }
+} */
+
+@media screen and (min-width: 500px) {
+  h1 {
+    color: aqua;
+  }
+}
+@media screen and (min-width: 800px) {
+  h1 {
+    color: turquoise;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h1 {
+    color: dodgerblue;
+  }
+}
+
+/* @media screen and (orientation: landscape) {
+  body {
+    background-color: rgb(80, 80, 80);
+  }
+} */
