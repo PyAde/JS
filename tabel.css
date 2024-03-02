@@ -130,3 +130,137 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+html {
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: #5580d5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 50%;
+  left: 0;
+  right: 0;
+  background-color: rgb(70, 167, 241); /* Warna biru */
+  z-index: -1;
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 50%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #ffffff; /* Warna putih */
+  z-index: -1;
+}
+.box {
+  background-color: #254d71;
+}
+.panel-princing-table {
+  background-color: white;
+  border-radius: 10px;
+  padding: 15px 25px;
+  width: 100%;
+  max-width: 960px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.princing-plant {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.princing-plant:last-child {
+  border-bottom: none;
+}
+
+.princing-img {
+  margin-bottom: 25px;
+  max-width: 100%;
+}
+
+.princing-header {
+  color: #888;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.princing-features {
+  margin: 50px 25px;
+  color: #010ff9;
+}
+
+.princing-features-items {
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5;
+  padding: 15px 0px;
+  border-top: 1px solid #e1f1ff;
+}
+
+.princing-features-items:last-child {
+  border-bottom: 1px solid #e1f1ff;
+}
+
+.princing-price {
+  color: #016ff9;
+  display: block;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.princing-bottom {
+  border: 1px solid #9dd1ff;
+  border-radius: 10px;
+  color: #348efe;
+  display: inline-block;
+  padding: 15px 5px;
+  text-decoration: none;
+  margin: 25px 0px;
+}
+
+.princing-bottom:hover,
+.princing-bottom:focus {
+  background-color: #e1f1ff;
+}
+
+.princing-bottom.is-featured {
+  background-color: #48aaff;
+  color: white;
+}
+.princing-bottom.is-featured:hover,
+.princing-bottom.is-featured:focus {
+  background-color: #269aff;
+}
+.background {
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 900px) {
+  .panel-princing-table {
+    flex-direction: row;
+  }
+  .princing-plant {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+  .princing-plant:last-child {
+    border: none;
+  }
+}
