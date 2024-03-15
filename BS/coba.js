@@ -50,13 +50,58 @@ function howManydays(month) {
     case 4:
       days = 30;
       break;
+    case 6:
+      days = 30;
+      break;
+    case 7:
+      days = 31;
+      break;
+    case 8:
+      days = 31;
+      break;
+    case 9:
+      days = 30;
+      break;
+    case 10:
+      days = 31;
+      break;
+    case 11:
+      days = 30;
+      break;
     case 12:
       days = 31;
       break;
     default:
-      days = -1; // Invalid month, you may want to handle this case accordingly
   }
   return days;
 }
 
-console.log(howManydays(1))
+console.log(howManydays(1));
+
+function padIt(str,n){
+  //coding here
+  let result = str;
+  let i = 0;
+  while(i < n){
+    i++
+    if(n % 2 === 0){
+      result = "*" + result;
+    }else{
+      result = result + "*";
+    }
+  }
+}
+
+function padIt(str, n) {
+  let result = str;
+  let i = 0;
+  while (i < n) {
+    if (i % 2 === 0) { // Check if the current iteration is even
+      result = "*" + result;
+    } else {
+      result = result + "*";
+    }
+    i++;
+  }
+  return result;
+}
