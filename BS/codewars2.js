@@ -37,3 +37,15 @@ function arrayDiff(a, b) {
     }
     return result
 }
+
+
+function shuffleIt(arr, ...args){
+  //coding here...
+  for(let index of args){
+    let [fromIndex, toIndex] = index;
+    const temp = arr[fromIndex];
+    arr[fromIndex] = arr[toIndex];
+    arr[toIndex] = temp;
+  }
+  return arr;
+}

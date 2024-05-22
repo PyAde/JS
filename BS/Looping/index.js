@@ -65,3 +65,79 @@ function bubblesortOnce(a) {
   }
   return b;
 }
+
+
+
+// describe("Tests", () => {
+//   it("test", () => {
+//     Test.assertSimilar(howManySmaller([1.234,1.235,1.228],1.24), 2);
+//     Test.assertSimilar(howManySmaller([1.1888,1.1868,1.1838],1.19), 1);
+//     Test.assertSimilar(howManySmaller([3.1288,3.1212,3.1205],3.1212), 2);
+
+//   });
+// });
+
+function howManySmaller(arr,n){
+  //coding here..
+  let a = 0;
+
+  for(let i of arr){
+    if(i.toFixed(2) < n){
+      a++
+    }
+  }
+  return a;
+}
+
+// describe("Tests", () => {
+//   it("test", () => {
+//     Test.assertSimilar(cutIt(["ab","cde","fgh"]) , ["ab","cd","fg"]);
+//     Test.assertSimilar(cutIt(["abc","defgh","ijklmn"]) , ["abc","def","ijk"]);
+//     Test.assertSimilar(cutIt(["codewars","javascript","java"]) , ["code","java","java"]);
+
+//   });
+// });
+function cutIt(arr){
+  //coding here...
+  let minArr = arr[0].length;
+  for(let i of arr){
+    if(i.length < minArr){
+      minArr = i.length;
+    }
+  }
+  for(let i  = 0; i <arr.length ; i++){
+    arr[i] = arr[i].slice(0, minArr);
+  }
+  return arr;
+}
+
+function cutIt(arr) {
+  let minArr = arr[0].length;
+  for (let i of arr) {
+    if (i.length < minArr) {
+      minArr = i.length;
+    }
+  }
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = arr[i].slice(0, minArr);
+  }
+  return arr;
+}
+
+// Contoh penggunaan
+// let array = ["ab", "cde", "fgh"];
+// let result = cutIt(array);
+// console.log(result);
+
+
+function findMyIndex(array,num){
+  for(let i = 0; i < array.length; i++){
+    if(array[i] == num){
+      return i;
+    }
+    console.log(array.length)
+  }
+  return 0;
+}
+
+console.log(findMyIndex([1,4,2,3,5],4))
