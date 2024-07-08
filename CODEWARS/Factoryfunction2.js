@@ -48,7 +48,7 @@ function person(firstName, lastName, age, gender, employed, occupation, married)
     occupation: occupation,
     married: married,
     sayName: function () {
-      return this.firstName + " " + this.lastName;
+      return `${firstName} ${lastName}`
     },
     introduce: function () {
       let intro = `Hello, my name is ${this.sayName()}.  I am ${
